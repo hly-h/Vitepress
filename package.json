@@ -1,0 +1,30 @@
+{
+  "name": "ssy-ui-vite",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@iconify-json/ic": "^1.2.1",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "unocss": "^0.63.4",
+    "vite": "^5.4.9",
+    "vitepress": "^1.4.1",
+    "vitepress-theme-demoblock": "3.0.7"
+  },
+  "dependencies": {
+    "vue": "^3.5.12"
+  }
+}
