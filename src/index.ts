@@ -1,5 +1,5 @@
-import { createApp } from "vue";
-import SSYUI from "./entry";
+import { createApp } from 'vue'
+import SSYUI from './entry'
 
 createApp({
   template: `
@@ -38,4 +38,4 @@ createApp({
   `,
 })
   .use(SSYUI)
-  .mount("#app");
+  .mount('#app')

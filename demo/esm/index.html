@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,9 +13,9 @@
     <div id="app"></div>
 
     <script type="module">
-      import { createApp } from "vue";
+      import { createApp } from 'vue'
 
-      import { SButton } from "../../dist/ssy-ui.js";
+      import { SButton } from '../../dist/ssy-ui.js'
 
       createApp({
         template: `
@@ -29,7 +29,7 @@
      `,
       })
         .component(SButton.name, SButton)
-        .mount("#app");
+        .mount('#app')
     </script>
   </body>
 </html>

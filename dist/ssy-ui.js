@@ -68,9 +68,9 @@ const SButton = /* @__PURE__ */ defineComponent({
           border-solid
           text-${props.plain ? `${props.color}-500` : "white"}
           text-${size[props.size].text}
-          hover:text-white
-          transition duration-300 ease-in-out transform hover:scale-105
-          mx-1
+          hover-text-white=""
+          transition="" duration-300="" ease-in-out="" transform="" hover-scale-105=""
+          mx-1=""
           `
     }, [props.icon !== "" ? createVNode("i", {
       "class": `i-ic-baseline-${props.icon} p-3`
@@ -110,3 +110,4 @@ export {
   TSXButton,
   entry as default
 };
+//# sourceMappingURL=ssy-ui.js.map
