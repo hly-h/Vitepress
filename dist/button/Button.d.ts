@@ -81,8 +81,8 @@ declare const _default: import("vue").DefineComponent<ExtractPropTypes<{
     };
 }>> & Readonly<{}>, {
     readonly size: ButtonSize;
-    readonly color: ButtonColor;
     readonly round: boolean;
+    readonly color: ButtonColor;
     readonly plain: boolean;
     readonly icon: string;
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;

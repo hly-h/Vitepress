@@ -1,5 +1,6 @@
 import type { Plugin } from 'vue';
 import 'virtual:uno.css';
+export * from './avatar';
 export * from './button';
 export * from './link';
 declare const _default: {

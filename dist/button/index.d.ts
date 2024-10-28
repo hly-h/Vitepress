@@ -44,8 +44,8 @@ export declare const Button: import("../utils/with-install").WithInstall<import(
     };
 }>> & Readonly<{}>, {
     readonly size: import("./Button").ButtonSize;
-    readonly color: import("./Button").ButtonColor;
     readonly round: boolean;
+    readonly color: import("./Button").ButtonColor;
     readonly plain: boolean;
     readonly icon: string;
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>>;

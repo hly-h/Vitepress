@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Component Demo</title>
+  </head>
+
+  <body>
+    <h2>按需引入：头像组件</h2>
+    <div id="app"></div>
+    <link rel="stylesheet" href="../dist/entry.css" />
+    <script src="../node_modules/vue/dist/vue.global.js"></script>
+    <script src="../dist/avatar/index.umd.cjs"></script>
+
+    <script>
+      const { createApp } = Vue
+      const { Avatar } = avatar // 假设你的组件导出为 Avatar
+
+      createApp({
+        template: `
+        <div>
+          <SAvatar
+            url="https://sns-webpic-qc.xhscdn.com/202410281932/25cd65b4d8a79769788264eb09a2946b/comment/1040g2h0319cp4tb6lk004a5od51nn9648cdftlg!nd_whgt34_webp_wm_1"
+            round
+            size="100px"
+          ></SAvatar>
+          <SAvatar
+            url="https://sns-webpic-qc.xhscdn.com/202410281936/7d934e68e723d41c667a54101fd8c9b1/comment/1040g2h0318g772d73q5g5ol0nkk8c6rj00ec230!nd_whgt34_webp_wm_1"
+             :round="false"
+            size="80px"
+          ></SAvatar>
+        </div>
+      `,
+      })
+        .use(Avatar)
+        .mount('#app')
+    </script>
+  </body>
+</html>
