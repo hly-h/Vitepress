@@ -1,23 +1,22 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>测试 IIFE</title>
+    <title>按需引入</title>
   </head>
 
   <body>
-    <h1>Test IIFE</h1>
+    <h2>按需引入:按钮组件</h2>
     <div id="app"></div>
-    <link rel="stylesheet" href="../../dist/entry.css" />
-    <script src="../../node_modules/vue/dist/vue.global.js"></script>
-    <script src="../../dist/ssy-ui.iife.js"></script>
+    <link rel="stylesheet" href="../dist/button/index.css" />
+    <script src="../node_modules/vue/dist/vue.global.js"></script>
+    <script src="../dist/button/index.umd.cjs"></script>
     <script>
-      console.log('111')
       const { createApp } = Vue
-      console.log('vue', Vue)
-      console.log('SSYUI', SSYUI)
+      const { Button } = button
+      console.log('SSYUI:Button', Button)
       createApp({
         template: `
         <div style="margin-bottom:20px;">
@@ -27,8 +26,7 @@
             <SButton color="yellow">黄色按钮</SButton>
             <SButton color="red">红色按钮</SButton>
         </div>
-        <div style="margin-bottom:20px;"
-        >
+        <div style="margin-bottom:20px;">
             <SButton color="blue" plain>朴素按钮</SButton>
             <SButton color="green" plain>绿色按钮</SButton>
             <SButton color="gray" plain>灰色按钮</SButton>
@@ -52,12 +50,12 @@
             <SButton color="green" round plain icon="edit"></SButton>
             <SButton color="gray" round plain icon="check"></SButton>
             <SButton color="yellow" round plain icon="message"></SButton>
-            <SButton color="red" round plain icon="delete"></SButton>
+            <s-button color="red" round plain icon="delete"></s-button>
         </div>
     `,
       })
-        .use(SSYUI.default)
+        .use(Button)
         .mount('#app')
     </script>
   </body>
-</html> -->
+</html>

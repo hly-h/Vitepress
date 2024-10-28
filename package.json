@@ -1,29 +1,51 @@
 {
-  "name": "ssy-ui-vite",
+  "name": "@moumo/ssy-ui-vite",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "",
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/entry.d.ts",
+      "import": "./dist/ssy-ui.js",
+      "require": "./dist/ssy-ui.umd.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/ssy-ui.umd.cjs",
+  "module": "./dist/ssy-ui.js",
+  "types": "./dist/entry.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "dev": "vite",
-    "build": "vite build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:all": "vite build",
+    "build:components": "tsx ./scripts/build.ts",
+    "build": "pnpm build:components && pnpm type:build",
+    "typecheck": "vue-tsc --noEmit",
+    "type:build": "vue-tsc -b --declaration --emitDeclarationOnly tsconfig.types.json",
+    "clean:dist": "rimraf dist"
   },
   "dependencies": {
     "@antfu/eslint-config": "^3.8.0",
+    "@moumo/ssy-ui-vite": "^1.0.0",
+    "@types/fs-extra": "^11.0.4",
     "@unocss/eslint-plugin": "^0.62.4",
     "commitizen": "^4.3.1",
     "eslint": "^9.13.0",
     "eslint-plugin-format": "^0.1.2",
+    "fs-extra": "^11.2.0",
+    "tsx": "^4.19.2",
     "typescript": "5.5.4",
     "unocss": "^0.63.6",
     "vue": "^3.5.12"
@@ -32,6 +54,7 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@iconify-json/ic": "^1.2.1",
+    "@types/node": "^22.8.1",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vue/test-utils": "2.4.6",
@@ -44,7 +67,8 @@
     "vite": "^5.4.10",
     "vitepress": "^1.4.1",
     "vitepress-theme-demoblock": "3.0.7",
-    "vitest": "2.1.2"
+    "vitest": "2.1.2",
+    "vue-tsc": "^2.1.8"
   },
   "config": {
     "commitizen": {
@@ -53,5 +77,9 @@
     "cz-customizable": {
       "config": ".cz-config.cjs"
     }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
