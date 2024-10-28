@@ -40,7 +40,7 @@ export default defineConfig({
       name: 'SSYUI',
       fileName: 'ssy-ui',
       // 导出模块格式
-      formats: ['es', 'umd'],
+      formats: ['es', 'umd', 'iife'],
     },
   },
 })
