@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/license/moumo/ssy-ui-vite">
+<img src="https://img.shields.io/github/license/ruoshuisa/Vitepress">
 </p>
 
 ## Features
