@@ -1,6 +1,10 @@
 <br>
 <p align="center">
 <img src="https://simpleicons.org/icons/github.svg" style="width:200px"/>
+[![codecov](https://codecov.io/github/ruoshuisa/Vitepress/graph/badge.svg?token=BE4NT8E4RW)](https://codecov.io/github/ruoshuisa/Vitepress)
+<a href="https://codecov.io/github/ruoshuisa/Vitepress" >
+ <img src="https://codecov.io/github/ruoshuisa/Vitepress/graph/badge.svg?token=BE4NT8E4RW"/>
+ </a>
 </p>
 <h1 align="center">SSY-UI-VITE</h1>
 <p align="center">
