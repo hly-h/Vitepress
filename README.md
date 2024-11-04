@@ -48,3 +48,6 @@ const App = {
 
 ## Quick Start
 如果希望尽快上手，可以访问 [Getting Started](https://vitepress-silk.vercel.app/)
+
+## 欢迎提PR
+一起加入项目
