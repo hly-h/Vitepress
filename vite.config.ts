@@ -29,7 +29,7 @@ export default defineConfig({
     coverage: {
       provider: 'istanbul', // or 'v8',
       reporter: ['text', 'json', 'html'],
-      include: ['src/button/index.ts', 'src/button/Button.tsx'], // 指定你要测试的文件路径
+      include: ['src/**/*.ts', 'src/**/*.tsx'], // 指定你要测试的文件路径
       exclude: ['src/*.ts', 'src/utils/**'], // 指定你要忽略的文件路径
     },
   },
