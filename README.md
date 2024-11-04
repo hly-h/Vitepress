@@ -10,10 +10,10 @@
 
 <p align="center">
 <img src="https://img.shields.io/github/license/ruoshuisa/Vitepress">
-</p>
 <a href="https://codecov.io/github/ruoshuisa/Vitepress" >
  <img src="https://codecov.io/github/ruoshuisa/Vitepress/graph/badge.svg?token=BE4NT8E4RW"/>
  </a>
+</p>
 
 ## Features
 
